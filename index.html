@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make It Happen Hypnotherapy: Heal, Empower, Transform</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Applying the Inter font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles inspired by mihh.com.au and the provided screenshot */
+        .brand-primary { color: #1A365D; /* Dark, rich navy blue */ }
+        .brand-accent { color: #F59E0B; /* Vibrant gold-orange */ }
+        .bg-brand-light { background-color: #f0f5fa; /* A very light, muted blue */ }
+        
+        .btn-primary {
+            background-color: #1A365D;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #2c5282;
+        }
+
+        .btn-accent {
+            background-color: #F59E0B;
+            color: #1A365D;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-accent:hover {
+            background-color: #dd8f0a;
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            font-size: 2.25rem; /* 36px */
+            font-weight: 700;
+            color: #1A365D;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .section-subtitle {
+            font-size: 1.125rem; /* 18px */
+            color: #4a5568; /* A darker grey for better contrast */
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+        }
+        .service-card {
+            display: block;
+            background-color: white;
+            border-radius: 0.75rem; /* 12px */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold brand-primary">
+                Make It Happen
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-gray-600 hover:brand-primary transition-colors">Services</a>
+                <a href="#experts" class="text-gray-600 hover:brand-primary transition-colors">Our Experts</a>
+                <a href="#resources" class="text-gray-600 hover:brand-primary transition-colors">Resources</a>
+                <a href="https://mihhsandy.as.me/free-hypnotic-strategy-session" target="_blank" class="btn-primary font-semibold py-2 px-5 rounded-full">Book a Session</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Mobile Menu Button -->
+                <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-brand-light py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold brand-primary leading-tight">Heal, Empower, Transform</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    A leading Australian clinical hypnotherapy practice specializing in resolving the root cause of anxiety, trauma, and limiting beliefs. We use a unique framework to facilitate rapid, lasting transformation for our clients globally.
+                </p>
+                <div class="mt-8">
+                    <a href="https://mihhsandy.as.me/free-hypnotic-strategy-session" target="_blank" class="btn-accent text-lg py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all">
+                        Book a Strategy Call
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Services Section -->
+        <section id="services" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Core Services</h2>
+                <p class="section-subtitle">
+                    We offer a range of specialized hypnotherapy programs designed to address the root of your challenges and empower you to create lasting change.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Cards -->
+                    <a href="https://mihh.com.au/key-areas/mental-wellness/hypnotherapy-for-social-anxiety/" target="_blank" class="service-card">
+                        <div class="p-8"><h3 class="text-xl font-bold brand-primary mb-3">Hypnotherapy for Anxiety</h3><p class="text-gray-600">Overcome anxiety, panic attacks, and stress by resolving subconscious triggers.</p></div>
+                    </a>
+                    <a href="https://mihh.com.au/services/quantum-healing-hypnosis-technique-qhht/" target="_blank" class="service-card">
+                        <div class="p-8"><h3 class="text-xl font-bold brand-primary mb-3">Quantum Healing (QHHT®)</h3><p class="text-gray-600">Explore past lives, connect with your Higher Self, and find deep healing.</p></div>
+                    </a>
+                    <a href="https://mihh.com.au/key-areas/health-body/hypnotherapy-for-weight-loss/" target="_blank" class="service-card">
+                        <div class="p-8"><h3 class="text-xl font-bold brand-primary mb-3">Hypnotherapy for Weight Loss</h3><p class="text-gray-600">Rewire your relationship with food and address emotional eating.</p></div>
+                    </a>
+                    <a href="https://mihh.com.au/key-areas/mental-wellness/hypnotherapy-for-ptsd/" target="_blank" class="service-card">
+                        <div class="p-8"><h3 class="text-xl font-bold brand-primary mb-3">Hypnotherapy for Trauma & PTSD</h3><p class="text-gray-600">Safely process and release the emotional impact of past traumatic events.</p></div>
+                    </a>
+                    <a href="https://mihh.com.au/key-areas/fear-phobias/hypnotherapy-for-curing-fears-and-phobias/" target="_blank" class="service-card">
+                        <div class="p-8"><h3 class="text-xl font-bold brand-primary mb-3">Hypnotherapy for Fears & Phobias</h3><p class="text-gray-600">Overcome specific phobias like fear of driving, flying, or public speaking.</p></div>
+                    </a>
+                    <a href="https://mihh.com.au/key-areas/stop-addiction/hypnotherapy-for-quit-smoking/" target="_blank" class="service-card">
+                        <div class="p-8"><h3 class="text-xl font-bold brand-primary mb-3">Quit Smoking Hypnotherapy</h3><p class="text-gray-600">Break the subconscious habits tied to smoking for lasting cessation.</p></div>
+                    </a>
+                    <a href="#" class="service-card">
+                        <div class="p-8"><h3 class="text-xl font-bold brand-primary mb-3">Hypnotherapy for Confidence</h3><p class="text-gray-600">Overcome self-doubt, build strong self-esteem, and unlock your true potential.</p></div>
+                    </a>
+                    <a href="#" class="service-card">
+                        <div class="p-8"><h3 class="text-xl font-bold brand-primary mb-3">Hypnotherapy for Anger Management</h3><p class="text-gray-600">Address subconscious triggers and build new pathways for calm responses.</p></div>
+                    </a>
+                    <a href="#" class="service-card">
+                        <div class="p-8"><h3 class="text-xl font-bold brand-primary mb-3">Hypnotherapy for Positivity</h3><p class="text-gray-600">Break free from negative thought patterns and develop a positive outlook.</p></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Experts Section -->
+        <section id="experts" class="bg-brand-light py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Meet Our Experts</h2>
+                <p class="section-subtitle">
+                    Our content and services are provided by certified, experienced practitioners dedicated to your well-being and transformation.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    <!-- Expert Card -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://placehold.co/150x150/ebf8ff/1A365D?text=SW" alt="Sandy Wong" class="w-36 h-36 rounded-full shadow-lg mb-4 border-4 border-white">
+                        <h3 class="text-xl font-bold brand-primary">Sandy Wong</h3>
+                        <p class="brand-accent font-semibold">Founder & Senior Hypnotherapist</p>
+                        <p class="mt-2 text-gray-600">Certified in QHHT®, Psychotherapy, NLP, and Havening Techniques®.</p>
+                    </div>
+                    <!-- Expert Card -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://placehold.co/150x150/ebf8ff/1A365D?text=ML" alt="Maylin Lim" class="w-36 h-36 rounded-full shadow-lg mb-4 border-4 border-white">
+                        <h3 class="text-xl font-bold brand-primary">Maylin Lim</h3>
+                        <p class="brand-accent font-semibold">Senior QHHT® Practitioner</p>
+                        <p class="mt-2 text-gray-600">Specializes in QHHT® and Akashic Records Reading.</p>
+                    </div>
+                    <!-- Expert Card -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://placehold.co/150x150/ebf8ff/1A365D?text=IA" alt="Islam Abdullah" class="w-36 h-36 rounded-full shadow-lg mb-4 border-4 border-white">
+                        <h3 class="text-xl font-bold brand-primary">Islam Abdullah</h3>
+                        <p class="brand-accent font-semibold">Director & Business Coach</p>
+                        <p class="mt-2 text-gray-600">Responsible for strategic development and growth.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="https://mihh.com.au/about-us/" target="_blank" class="btn-primary text-lg font-semibold py-3 px-7 rounded-full shadow-lg hover:shadow-xl transition-all">
+                        Learn More About Our Team
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog & Resources Section -->
+        <section id="resources" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Key Blog Posts & Resources</h2>
+                <p class="section-subtitle">
+                    Explore our curated list of informative articles to guide you on your journey of healing and self-discovery.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Resource Card -->
+                    <div class="bg-white rounded-xl shadow-lg flex flex-col">
+                        <div class="p-6 flex-grow"><h3 class="text-lg font-bold brand-primary mb-2">How to Prepare for Your QHHT Session</h3><p class="text-gray-600 text-sm">Essential tips on mindset, diet, and crafting questions for a profound experience.</p></div>
+                        <div class="p-6 bg-gray-50 rounded-b-xl"><a href="https://mihh.com.au/how-to-prepare-for-your-qhht-session/" target="_blank" class="font-semibold text-blue-700 hover:text-blue-900 transition-colors">Read More &rarr;</a></div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg flex flex-col">
+                        <div class="p-6 flex-grow"><h3 class="text-lg font-bold brand-primary mb-2">QHHT in Australia: 15 Common Questions</h3><p class="text-gray-600 text-sm">A comprehensive guide answering the most frequent questions about QHHT.</p></div>
+                        <div class="p-6 bg-gray-50 rounded-b-xl"><a href="https://mihh.com.au/qhht-in-australia-15-common-questions/" target="_blank" class="font-semibold text-blue-700 hover:text-blue-900 transition-colors">Read More &rarr;</a></div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg flex flex-col">
+                        <div class="p-6 flex-grow"><h3 class="text-lg font-bold brand-primary mb-2">Why Complex PTSD Feels So Hard to Heal</h3><p class="text-gray-600 text-sm">Understanding C-PTSD and effective, trauma-informed healing journeys.</p></div>
+                        <div class="p-6 bg-gray-50 rounded-b-xl"><a href="https://mihh.com.au/why-complex-ptsd-is-difficult-to-heal/" target="_blank" class="font-semibold text-blue-700 hover:text-blue-900 transition-colors">Read More &rarr;</a></div>
+                    </div>
+                     <!-- Add more resource cards here as links become available -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Make It Happen</h3>
+                    <p class="text-gray-400">Heal, Empower, Transform.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#services" class="hover:brand-accent transition-colors">Services</a></li>
+                        <li class="mb-2"><a href="#experts" class="hover:brand-accent transition-colors">Our Experts</a></li>
+                        <li class="mb-2"><a href="#resources" class="hover:brand-accent transition-colors">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Legal</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="hover:brand-accent transition-colors">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="hover:brand-accent transition-colors">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#" class="hover:brand-accent transition-colors">XML Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Connect With Us</h4>
+                    <a href="https://mihhsandy.as.me/free-hypnotic-strategy-session" target="_blank" class="btn-accent font-semibold py-3 px-6 rounded-full inline-block">Book a Free Call</a>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 Make It Happen Hypnotherapy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
